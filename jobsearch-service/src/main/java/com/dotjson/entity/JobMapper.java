@@ -8,4 +8,5 @@ public interface JobMapper {
     JobResponse jobEntityToResponse(Job job);
 
     Job jobRequestToEntity(JobRequest request);
+
 }

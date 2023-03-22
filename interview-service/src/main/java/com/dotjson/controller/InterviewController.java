@@ -1,12 +1,11 @@
 package com.dotjson.controller;
 
-import com.dotjson.dto.OrderResponseDTO;
+import com.dotjson.entity.InterviewRequest;
+import com.dotjson.entity.InterviewResponse;
 import com.dotjson.service.InterviewService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/interview")
@@ -20,8 +19,13 @@ public class InterviewController {
         return service.greeting();
     }
 
-    @GetMapping("/orders/status/{orderId}")
-    public OrderResponseDTO getOrder(@PathVariable String orderId) {
-        return service.getOrder(orderId);
+    @PostMapping("/save")
+    public ResponseEntity<InterviewResponse> save(@RequestBody InterviewRequest interviewRequest) {
+        return ResponseEntity.ok(service.saveInterview(interviewRequest));
+    }
+
+    @GetMapping("/getInterview")
+    public ResponseEntity<InterviewResponse> getById(@RequestParam int id) {
+        return ResponseEntity.ok(service.getInterview(id));
     }
 }

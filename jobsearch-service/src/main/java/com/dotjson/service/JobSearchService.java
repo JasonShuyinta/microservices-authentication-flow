@@ -6,7 +6,6 @@ import com.dotjson.entity.JobRequest;
 import com.dotjson.entity.JobResponse;
 import com.dotjson.repository.JobRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
