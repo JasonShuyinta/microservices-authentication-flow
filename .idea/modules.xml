@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authentication-service/authentication-service.iml" filepath="$PROJECT_DIR$/authentication-service/authentication-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interview-service/interview-service.iml" filepath="$PROJECT_DIR$/interview-service/interview-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jobsearch-service/jobsearch-service.iml" filepath="$PROJECT_DIR$/jobsearch-service/jobsearch-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-authentication-flow.iml" filepath="$PROJECT_DIR$/.idea/microservices-authentication-flow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiggy-service-registry/service-registry.iml" filepath="$PROJECT_DIR$/swiggy-service-registry/service-registry.iml" />
+    </modules>
+  </component>
+</project>
