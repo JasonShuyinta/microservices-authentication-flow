@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: SWIGGY-APP
+    name: JOB-SEARCH
 
 eureka:
   client:

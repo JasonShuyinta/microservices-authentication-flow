@@ -6,10 +6,12 @@ import com.dotjson.entity.JobRequest;
 import com.dotjson.entity.JobResponse;
 import com.dotjson.repository.JobRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class JobSearchService {
 
     public static final String WELCOME_TO_JOB_SEARCH_SERVICE = "Welcome to Job Search Service";

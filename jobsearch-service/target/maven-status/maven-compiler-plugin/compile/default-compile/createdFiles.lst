@@ -1,0 +1,10 @@
+com\dotjson\JobSearchApplication.class
+com\dotjson\config\JobSearchConfig.class
+com\dotjson\entity\JobRequest.class
+com\dotjson\repository\JobRepository.class
+com\dotjson\entity\JobMapper.class
+com\dotjson\entity\JobMapperImpl.class
+com\dotjson\entity\JobResponse.class
+com\dotjson\service\JobSearchService.class
+com\dotjson\controller\JobSearchController.class
+com\dotjson\entity\Job.class

@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/interview-service/interview-service.iml" filepath="$PROJECT_DIR$/interview-service/interview-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/jobsearch-service/jobsearch-service.iml" filepath="$PROJECT_DIR$/jobsearch-service/jobsearch-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservices-authentication-flow.iml" filepath="$PROJECT_DIR$/.idea/microservices-authentication-flow.iml" />
-      <module fileurl="file://$PROJECT_DIR$/swiggy-service-registry/service-registry.iml" filepath="$PROJECT_DIR$/swiggy-service-registry/service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/service-registry/service-registry.iml" />
     </modules>
   </component>
 </project>

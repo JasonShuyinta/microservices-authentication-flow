@@ -2,17 +2,17 @@ spring:
  cloud:
    gateway:
      routes:
-       - id: swiggy-app
+       - id: jobsearch-app
          uri: lb://JOB-SEARCH
          predicates:
-           - Path=/swiggy/**
+           - Path=/job/**
          filters:
            - AuthenticationFilter
 
-       - id: restaurant-service
+       - id: interview-service
          uri: lb://INTERVIEW
          predicates:
-           - Path=/restaurant/**
+           - Path=/interview/**
          filters:
            - AuthenticationFilter
 
@@ -22,7 +22,7 @@ spring:
            - Path=/auth/**
 
  application:
-   name: SWIGGY-GATEWAY
+   name: API-GATEWAY
 
 eureka:
   client:

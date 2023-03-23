@@ -1,0 +1,9 @@
+com\dotjson\entity\InterviewResponse.class
+com\dotjson\service\InterviewService.class
+com\dotjson\entity\InterviewMapper.class
+com\dotjson\repository\InterviewRepository.class
+com\dotjson\entity\Interview.class
+com\dotjson\InterviewServiceApplication.class
+com\dotjson\controller\InterviewController.class
+com\dotjson\entity\InterviewMapperImpl.class
+com\dotjson\entity\InterviewRequest.class
