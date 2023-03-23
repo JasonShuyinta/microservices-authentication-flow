@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 N
 authentication-service/pom.xml,5\9\593f1bc2dfb5887e0ac5ebede7fbebd619fc507c
 {
@@ -29,10 +27,6 @@ D
 api-gateway/mvnw,1\9\19cad7b41ca7339efbd3c6404c1bc95e57a10758
 u
 Eapi-gateway/src/test/java/com/dotjson/ApiGatewayApplicationTests.java,d\e\de551e63965ddebddf3b213415ec0d9da254f0fe
-k
-;api-gateway/src/main/java/com/dotjson/config/AppConfig.java,c\0\c0c2058045069ae5a611d873730f877b8cc80b5c
-v
-Fapi-gateway/src/main/java/com/dotjson/filter/AuthenticationFilter.java,5\6\56270c36724bb28a1c0d9a2e4ea3c8b017cca7c7
 C
 api-gateway/HELP.md,0\8\08c250fabcd5ba2d35eab0afb3fcd75826d85834
 I
@@ -49,12 +43,6 @@ z
 Jjobsearch-service/src/test/java/com/dotjson/JobSearchApplicationTests.java,1\c\1c339c793dc8e68e2c0c40386ed0404b3316c082
 w
 Gjobsearch-service/src/main/java/com/dotjson/config/JobSearchConfig.java,2\d\2d1500a93ada2d765ef68548d48b808da90f875f
-C
-api-gateway/pom.xml,2\b\2bfa2b108f2439e99e004f4085b58c22cf995f73
-H
-service-registry/pom.xml,c\8\c838103466e7455490125db06ce61e4ea301ce49
-p
-@api-gateway/src/main/java/com/dotjson/filter/RouteValidator.java,b\f\bff65f05a24cdd2c71a56073db93092f4b904ce4
 
 Oservice-registry/src/test/java/com/dotjson/ServiceRegistryApplicationTests.java,8\d\8d3629fa86001d8d26dc3e4dd08d0cf9a4ee5335
 „
