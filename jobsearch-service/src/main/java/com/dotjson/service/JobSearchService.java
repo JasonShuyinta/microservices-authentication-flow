@@ -5,9 +5,13 @@ import com.dotjson.entity.JobMapper;
 import com.dotjson.entity.JobRequest;
 import com.dotjson.entity.JobResponse;
 import com.dotjson.repository.JobRepository;
+import com.dotjson.validation.JobNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -31,5 +35,20 @@ public class JobSearchService {
     public JobResponse getJobByTitle(String title) {
         Job job = jobRepository.findByTitle(title).orElseThrow(() -> new RuntimeException("Could not find job"));
         return mapper.jobEntityToResponse(job);
+    }
+
+    public JobResponse getJobById(int id) throws JobNotFoundException {
+        Job job = jobRepository.findById(id).orElseThrow(() -> new JobNotFoundException("Could find job with id " + id));
+        return mapper.jobEntityToResponse(job);
+    }
+
+    public List<JobResponse> getAll() {
+        List<JobResponse> response = new ArrayList<>();
+        List<Job> jobList = jobRepository.findAll();
+        for (Job job:
+             jobList) {
+            response.add(mapper.jobEntityToResponse(job));
+        }
+        return response;
     }
 }

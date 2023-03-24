@@ -12,5 +12,6 @@ public class JobResponse {
     private int id;
     private String title;
     private String description;
-    private String salary;
+    private int salary;
+    private String email;
 }

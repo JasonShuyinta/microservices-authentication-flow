@@ -6,4 +6,6 @@ C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-au
 C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\service\JobSearchService.java
 C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\entity\JobRequest.java
 C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\repository\JobRepository.java
+C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\validation\JobNotFoundException.java
+C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\validation\ExceptionHandler.java
 C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\microservices-authentication-flow\jobsearch-service\src\main\java\com\dotjson\JobSearchApplication.java

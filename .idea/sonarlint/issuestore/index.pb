@@ -1,8 +1,6 @@
 
 N
 authentication-service/pom.xml,5\9\593f1bc2dfb5887e0ac5ebede7fbebd619fc507c
-{
-Kauthentication-service/src/main/java/com/dotjson/entity/UserCredential.java,7\f\7fb4036c877f1d287fe60eae446806166fdcd5ce
 ƒ
 Sauthentication-service/src/main/java/com/dotjson/service/AuthenticationService.java,9\3\93750e27eb9b68b60fe0f2c45c411822ad3614fc
 ‰
@@ -453,8 +451,6 @@ d
 4.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml,6\2\6284eecedd2d85fb3913164f96df4582210062ba
 y
 Ijobsearch-service/src/main/java/com/dotjson/repository/JobRepository.java,d\e\de5e1333c9a78478e8b8d83bffc023436b8e85b9
-s
-Cjobsearch-service/src/main/java/com/dotjson/entity/JobResponse.java,d\6\d692e2cf49eeb4f2b0831f164cadc1ff258fdf85
 
 Ointerview-service/src/main/java/com/dotjson/repository/InterviewRepository.java,6\d\6d4345d5f90cb6c718055ca0af672d94141008a7
 q
@@ -465,3 +461,31 @@ x
 Hinterview-service/src/main/java/com/dotjson/entity/InterviewRequest.java,2\e\2e35da1c78e143c61a9d1050488ffda2c24cd3ec
 y
 Iinterview-service/src/main/java/com/dotjson/entity/InterviewResponse.java,f\2\f20191cfcf6cf37b0160becf77d6daaf6073d52c
+y
+Iinterview-service/src/main/java/com/dotjson/service/InterviewService.java,2\e\2edfeb43121cfe5606514f18b75bc71104840f13
+
+Ointerview-service/src/main/java/com/dotjson/controller/InterviewController.java,f\f\ff7b641b827a52ceb8bcb727710df9d7e20bbdaf
+u
+Ejobsearch-service/src/main/java/com/dotjson/JobSearchApplication.java,1\7\17b225a4afafc6df67b9c2f2120aa77b835ac735
+z
+Jservice-registry/src/main/java/com/dotjson/ServiceRegistryApplication.java,1\d\1d31df1b630fbf7eeb5bb2c47d94b08788b9c5f8
+w
+Gauthentication-service/src/main/java/com/dotjson/config/AuthConfig.java,7\4\745ba3e305a187de59bfb50ff91b0dd96648f56e
+q
+Ajobsearch-service/src/main/java/com/dotjson/entity/JobMapper.java,7\0\700d8e9a6b782e4aa25f617af3bd78b3bae35b5c
+W
+'interview-service/interview-service.iml,6\a\6a3b76ae67b0350e9fef038030aca86f57d0f6be
+U
+%service-registry/service-registry.iml,4\6\465cfca30fe27ac9125ee9ed7cfb7145c55c613a
+I
+interview-service/pom.xml,2\4\24600d55a9b4cd9848a958d3e092611550dd8237
+x
+Hauthentication-service/src/main/java/com/dotjson/service/JwtService.java,9\2\9214718d8257268601ee68240c12be6b04d21686
+g
+7api-gateway/src/main/java/com/dotjson/util/JwtUtil.java,0\6\060426d0595f93f736445454f3928f8f5d4d6068
+u
+Eauthentication-service/src/main/java/com/dotjson/dto/AuthRequest.java,9\5\9550093cc2f5aa954915d00581c1000c01db402b
+p
+@api-gateway/src/main/java/com/dotjson/ApiGatewayApplication.java,9\f\9fe2c7a5f9e98d117ed994ab5f6515022137506e
+p
+@api-gateway/src/main/java/com/dotjson/filter/RouteValidator.java,b\f\bff65f05a24cdd2c71a56073db93092f4b904ce4

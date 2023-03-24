@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-03-23T19:40:46+0100",
+    date = "2023-03-24T16:35:23+0100",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.5 (Oracle Corporation)"
 )
 @Component
@@ -23,6 +23,7 @@ public class JobMapperImpl implements JobMapper {
         jobResponse.setTitle( job.getTitle() );
         jobResponse.setDescription( job.getDescription() );
         jobResponse.setSalary( job.getSalary() );
+        jobResponse.setEmail( job.getEmail() );
 
         return jobResponse;
     }
