@@ -121,5 +121,66 @@ using it as a utility function as we did here.
 
 Once the validation is successful we can then tell the gateway to continue its chain and pass the request to the correct microservice.
 
+
+#### Validation and Exception handling
+In this tutorial we overview also how to handle validation and exceptions.
+
+You can see from the **jobsearch-service** how validation in handled. First, we need to import the validation dependency in our pom.xml:
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+Then, in our JobRequest you can see that we added some annotations in the fields, based of what type of validation is required.
+```java
+public class JobRequest {
+
+    private int id;
+    @NotNull(message = "Cannot have empty job title")
+    private String title;
+    @NotBlank(message = "Cannot leave blank description")
+    private String description;
+    @Min(100)
+    private int salary;
+    @Email(message = "Invalid email address")
+    private String emailReference;
+}
+```
+
+After that we add the @Valid annotation in the endpoint at the Controller level.
+
+
+Then all we have to do is create an ExceptionHandler class that loops through the MethodArgumentNotValidException and returns it. In this way we can have
+the error that is thrown for each field that does not pass validation. We also annotate the method with the ResponseStatus we want it to return.
+
+While on the other hand, for custom exceptions such as **JobNotFoundException** we simply throw the exception wherever it is needed and Spring when
+detects this Exception is going to handle it through our custom method and return the error message in a map as the following example:
+
+Remember to annotate your Exception handling class with @RestControllerAdvice.
+```java
+@RestControllerAdvice
+public class ExceptionHandler {
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @org.springframework.web.bind.annotation.ExceptionHandler(MethodArgumentNotValidException.class)
+    public Map<String, String> handleInvalidArguments(MethodArgumentNotValidException ex) {
+        Map<String, String> errorMap = new HashMap<>();
+        ex.getBindingResult().getFieldErrors().forEach(error -> {
+            errorMap.put(error.getField(), error.getDefaultMessage());
+        });
+        return errorMap;
+    }
+
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    @org.springframework.web.bind.annotation.ExceptionHandler(JobNotFoundException.class)
+    public Map<String, String> handleJobNotFoundException(JobNotFoundException ex) {
+        Map<String, String> errorMap = new HashMap<>();
+        errorMap.put("errorMessage", ex.getMessage());
+        return errorMap;
+    }
+}
+
+```
 #### Author
 Jason Shuyinta
