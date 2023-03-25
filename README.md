@@ -34,6 +34,10 @@ JWT token is created and returned to the client as a String.
 - **/validate**: this endpoint simply serves the purpose of validating a token, for example to verify that it is not corrupted or expired. This is the endpoint
 that is goind to be replicated by the API Gateway before passing any request further down the chain.
 
+Here follows the architectural diagram for the microservice authentication flow.
+
+![Diagraom](C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\AuthenticationFlow.png)
+
 #### API Gateway
 This is where the magic happens:
 First remember to add Webflux to the pom.xml of your gateway:
