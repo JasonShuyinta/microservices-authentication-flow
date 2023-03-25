@@ -36,7 +36,8 @@ that is goind to be replicated by the API Gateway before passing any request fur
 
 Here follows the architectural diagram for the microservice authentication flow.
 
-![Diagraom](C:\Users\jason\OneDrive\Desktop\Doc\microservice-authentication\AuthenticationFlow.png)
+
+![AuthenticationFlow](https://user-images.githubusercontent.com/50492920/227713143-44a1118c-2f57-44b9-8a82-ff2b7058dc28.png)
 
 #### API Gateway
 This is where the magic happens:
